@@ -48,8 +48,8 @@ else
     call edge#highlight('FoldColumn', s:palette.grey, s:palette.none)
   endif
 endif
-call edge#highlight('IncSearch', s:palette.bg0, s:palette.bg_blue)
-call edge#highlight('Search', s:palette.bg0, s:palette.bg_green)
+call edge#highlight('IncSearch', s:palette.bg0, s:palette.bg_green)
+call edge#highlight('Search', s:palette.bg0, s:palette.red)
 call edge#highlight('ColorColumn', s:palette.none, s:palette.bg1)
 call edge#highlight('Conceal', s:palette.grey, s:palette.none)
 if s:configuration.cursor ==# 'auto'
@@ -316,8 +316,8 @@ highlight! link TSFuncBuiltin Blue
 highlight! link TSFuncMacro Blue
 highlight! link TSParameter CyanItalic
 highlight! link TSMethod Blue
-highlight! link TSField Blue
-highlight! link TSProperty Blue
+highlight! link TSField Cyan
+highlight! link TSProperty Cyan
 highlight! link TSConstructor Fg
 highlight! link TSConditional Purple
 highlight! link TSRepeat Purple
